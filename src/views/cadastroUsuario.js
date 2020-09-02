@@ -24,15 +24,15 @@ class CadastroUsuario extends React.Component{
                                 <FormGroup label="Nome: *" htmlfor="inputNome">
                                     <input type="text" id="inputNome" className="form-control" name="nome"onChage={e =>this.setState({nome:e.target.value})}/>
                                 </FormGroup>
-                                <FormGroup label="Email: *" htmlfor="inputEmail">
+                                <FormGroup label="Produto: *" htmlfor="inputEmail">
                                     <input type="email" id="inputEmail" className="form-control" name="email"onChage={e =>this.setState({nome:e.target.value})}/>
                                 </FormGroup>
-                                <FormGroup label="Senha: *" htmlfor="inputSenha">
+                                <FormGroup label="Valor: *" htmlfor="inputSenha">
                                     <input type="password" id="inputSenha" className="form-control" name="senha"onChage={e =>this.setState({nome:e.target.value})}/>
                                 </FormGroup>
-                                <FormGroup label="Repita a Senha: *" htmlfor="inputRepitaSenha">
+                                {/* <FormGroup label="Repita a Senha: *" htmlfor="inputRepitaSenha">
                                     <input type="password" id="inputRepitaSenha" className="form-control" name="senha"onChage={e =>this.setState({nome:e.target.value})}/>
-                                </FormGroup>
+                                </FormGroup> */}
                                 <button onClick={this.cadastrar}type="button"className="btn btn-success">Salvar</button>
                                 <button onClick={this.cancelar} type="button"className="btn btn-danger">Cancelar</button>
                             </div>

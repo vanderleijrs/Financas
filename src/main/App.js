@@ -1,8 +1,7 @@
 import React from 'react';
 import Rotas from './rotas'
-import Navbar from  '../components/navbar'
-// import 'bootswatch/dist/flatly/bootstrap.css'
-import '../custom.css'
+import NavbarTeste from  '../components/Navbar/Navbar'
+import 'bootswatch/dist/flatly/bootstrap.css'
 
 class App extends React.Component {
   state ={
@@ -11,11 +10,9 @@ class App extends React.Component {
   render(){
     return (
       <>
-        <Navbar/>
+        <NavbarTeste/>
         <div className="container">
-        
           <Rotas />
-          
         </div>
       </>
     );
