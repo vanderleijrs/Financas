@@ -9,7 +9,7 @@ function NavbarTeste(){
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
                 <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#login">Cadastro</Nav.Link>
+                <Nav.Link href="#Table">T</Nav.Link>
             </Nav>
             </Navbar.Collapse>
         </Navbar>

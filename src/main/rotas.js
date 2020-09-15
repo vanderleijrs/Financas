@@ -2,7 +2,8 @@ import React from 'react'
 import {Route, Switch,HashRouter} from 'react-router-dom'
 import Login  from '../views/login'
 import Home from '../views/home'
-import table from'../components/Table'
+import TableComponent from'../components/Table/Table'
+
 import CadastroUsuario from '../views/cadastroUsuario'
 function Rotas(){
     return(
@@ -10,7 +11,7 @@ function Rotas(){
           <Switch>
             <Route path="/home" component={Home}/>
             <Route path="/login" component={Login}/>
-            <Route path="/table" component={table}/>
+            <Route path="/Table" component={TableComponent}/>
           </Switch>
       </HashRouter>  
     )

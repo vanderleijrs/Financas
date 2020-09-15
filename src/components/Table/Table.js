@@ -1,19 +1,22 @@
-import Table from 'react-bootstrap/Table'
-export default function Table() {
+import React from 'react';
+import {Table} from 'react-bootstrap'
+export default function TableComponent() {
    
         return(
             <Table responsive>
             <thead>
               <tr>
-                <th>#</th>
-                {Array.from({ length: 12 }).map((_, index) => (
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Descrição</th>
+              { /* {Array.from({ length: 12 }).map((_, index) => (
                   <th key={index}>Table heading</th>
-                ))}
+                ))}*/}
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
+              <td>{Array}</td>
                 {Array.from({ length: 12 }).map((_, index) => (
                   <td key={index}>Table cell {index}</td>
                 ))}
