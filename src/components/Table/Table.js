@@ -1,36 +1,20 @@
 import React from 'react';
 import {Table} from 'react-bootstrap'
+import ButtonComponent from "../Button/ButtonComponent"
 export default function TableComponent() {
-   
+  
         return(
             <Table responsive>
             <thead>
               <tr>
-                <th>Nome</th>
-                <th>Preço</th>
-                <th>Descrição</th>
-              { /* {Array.from({ length: 12 }).map((_, index) => (
-                  <th key={index}>Table heading</th>
-                ))}*/}
+                <h2>Clientes Cadastrados</h2>
               </tr>
             </thead>
             <tbody>
               <tr>
-              <td>{Array}</td>
+              <td>{}</td>
                 {Array.from({ length: 12 }).map((_, index) => (
-                  <td key={index}>Table cell {index}</td>
-                ))}
-              </tr>
-              <tr>
-                <td>2</td>
-                {Array.from({ length: 12 }).map((_, index) => (
-                  <td key={index}>Table cell {index}</td>
-                ))}
-              </tr>
-              <tr>
-                <td>3</td>
-                {Array.from({ length: 12 }).map((_, index) => (
-                  <td key={index}>Table cell {index}</td>
+                  <td ><ButtonComponent>{"Nome do Cliente"}</ButtonComponent></td>
                 ))}
               </tr>
             </tbody>

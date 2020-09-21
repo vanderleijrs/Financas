@@ -1,25 +1,16 @@
 import React from 'react';
-import {Button } from 'react-bootstrap'
-
+import {Button} from 'react-bootstrap'
+import CardComponent from '../components/Card/CardComponent';
 export default function Home() {
-    const [teste, fazerTeste] = React.useState("Bem Vindo!");
-
-    const funcao = () => {
-        fazerTeste("teste")
-    }
-
+   {/* const json;*/} 
         return (
-            <div className="jumbotron">
-                <h1 className="display-3">{ teste }</h1>
-                <p className="lead">Esse é seu sistema de finanças.</p>
-                <p>Essa é sua área administrativa, utilize um das menus ou botões abaixo para navegar pelo</p>
-                <p className="lead">
-                    <a className="btn btn-primary btn-lg" href="#/cadastro-usuarios" role="button"> <i className="fa fa-users"></i>Cadastrar Usuário</a>
-                    <a className="btn btn-danger btn-lg" href="https://bootwatch.com/flatly/#" role="button"> <i className="fa fa-users"></i>Cadastrar Lançamento</a>
-                </p>
-                <Button onClick={funcao}>
-                    clique
-                </Button>
+            <div className='container'><br/>
+                <CardComponent title="Cadastro de Cliente">
+                <h1>Sistema de finanças</h1><br/>
+                    <Button className="btn btn-primary btn-lg" href="#/cadastroUsuario" style={{marginLeft:10}}>Cadastrar Pessoa</Button>
+                    <Button className="btn btn-primary btn-lg" href="#/Table" style={{marginLeft:10}}>Clientes</Button>
+                    <Button className="btn btn-primary btn-lg" href="#/Compra"  style={{marginLeft:10}}>Compra</Button>
+                </CardComponent>
             </div>
         )
 }
